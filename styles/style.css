@@ -1,4 +1,7 @@
 /* место для вашего кода */
+
+/* SECTION - header */
+
 .header {
   width: 1100px;
   height: 293px;
@@ -40,6 +43,9 @@ margin-left: 80px;
   text-decoration: underline;
 }
 
+/* SECTION - cover */
+
+
 .section_cover {
   background-color: black;
 }
@@ -54,7 +60,7 @@ margin-left: 80px;
 .cover_img {
   max-width: 100%;
   object-fit: contain;
-  opacity: 0.55;
+  opacity: 0.4;
   scale: 160%;
   position: absolute;
 }
@@ -62,16 +68,14 @@ margin-left: 80px;
 .page_title1 {
   position: absolute;
   font-size: 80pt;
-    letter-spacing: 20px;
-
+  letter-spacing: 20px;
   left: 50px;
   top: 165px;
 }
 
 .page_title2 {
   font-size: 80pt;
-    letter-spacing: 20px;
-
+  letter-spacing: 20px;
   position: absolute;
   left: 380.5px;
   top: 300px;
@@ -87,11 +91,103 @@ margin-left: 80px;
 
 .description {
   position: absolute;
-  left: 0.5px;
-  top: 0px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 51px;
+  left: 50px;
+  top: 656px;
+  word-spacing: 50%;
+  font-size: 16pt;
 }
 
 .cta_button {
+  background:none;
+  color: white;
+  height: 51px;
+  width: 256px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+
+/* SECTION - Lots */
+
+.section_lots {
+  margin-top: 180px;
+  height: 723px;
+  width: 1052px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.lot {
+  /* top: 81px; */
+  background-color: black;
+  height: 596px;
+  position: relative;
+  width: 334px;
+}
+.lot1 {
+  left: 0;
+}
+
+.lot2 {
+}
+
+.lot3 {
+}
+
+.lots_title {
+  font-size: 40pt;
+  margin-left: 40px;
+  text-transform: uppercase;
   position: absolute;
-  z-index: 10;
+}
+
+.lots_box {
+  display: flex;
+  flex-direction: row;
+  height: 596px;
+  gap: 25px;
+  width: 1052px;
+  position: absolute;
+  top: 81px;
+}
+
+
+
+.view_more_button {
+  
+  position: absolute;
+  top: 700px;
+  left: 40px;
+}
+
+.lot_title {
+  position: absolute;
+  left: 40px;
+  top: 48px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.lot_description {
+  position: absolute;
+  color: white;
+  left: 40px;
+  top: 404px;
+}
+
+.lot_img {
+  width: 334px;
+  height: 596px;
+  object-fit: cover;
+  opacity: .4;
+position: absolute;
+
 }
